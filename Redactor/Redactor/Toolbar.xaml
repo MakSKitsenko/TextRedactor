@@ -34,9 +34,7 @@
             </Button>
 
            
-            <Button   x:Name="_Smiles" ToolTip="Смайлы">
-                <Image Source="Images/Smiles.jpg" Height="40" Width="40"/>
-            </Button>
+           
                 
 
             <Button x:Name="_Undo" ToolTip="Отменить">
@@ -82,6 +80,46 @@
                       ToolTip="Цвет"/>
 
         </ToolBar>
-    </ToolBarTray>
+        <ToolBar>
 
+            <Button x:Name="_Smiles" ToolTip=":)" Canvas.Left="6" Canvas.Top="4" Width="36">
+                <Image Source="Images/1.png" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles1" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="36" Canvas.Left="202" Canvas.Top="42">
+                <Image Source="Images/2.png" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles2" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="34" Canvas.Left="163" Canvas.Top="42">
+                <Image Source="Images/3.jpg" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles3" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="34" Canvas.Left="124" Canvas.Top="42">
+                <Image Source="Images/4.png" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles4" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="34" Canvas.Left="85" Canvas.Top="42">
+                <Image Source="Images/5.jpg" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles5" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="33" Canvas.Left="47" Canvas.Top="42">
+                <Image Source="Images/6.jpg" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles6" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="36" Canvas.Top="42" Canvas.Left="6">
+                <Image Source="Images/7.jpg" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles7" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="33" Canvas.Left="47" Canvas.Top="4">
+                <Image Source="Images/8.gif" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles8" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="34" Canvas.Left="85" Canvas.Top="4">
+                <Image Source="Images/9.gif" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles9" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="34" Canvas.Left="124" Canvas.Top="4">
+                <Image Source="Images/10.png" Height="20" Width="21"/>
+            </Button>
+            <Button x:Name="_Smiles10" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="34" Canvas.Left="163" Canvas.Top="4">
+                <Image Source="Images/11.png" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="_Smiles11" ToolTip="Смайлы" RenderTransformOrigin="2.55,1.04" Width="36" Canvas.Left="202" Canvas.Top="4">
+                <Image Source="Images/12.jpg" Height="20" Width="20"/>
+            </Button>
+
+        </ToolBar>
+    </ToolBarTray>
+    
 </UserControl>

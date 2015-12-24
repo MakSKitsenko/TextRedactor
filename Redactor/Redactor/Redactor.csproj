@@ -81,6 +81,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Interpretator\InterpretatorSmiles.cs" />
     <Compile Include="MahApps.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

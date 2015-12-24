@@ -25,13 +25,13 @@ namespace Redactor
     {
         private Manager _documentmanager;
         public Image i = new Image();
-       
+
 
         public MainWindow()
         {
             InitializeComponent();
             _documentmanager = new Manager(body);
-            
+
 
         }
 
@@ -42,7 +42,7 @@ namespace Redactor
             switch (menu.Name)
             {
                 case "New":
-                  _documentmanager.NewDocument();
+                    _documentmanager.NewDocument();
                     break;
                 case "Open":
                     _documentmanager.OpenDocument();
@@ -213,11 +213,29 @@ namespace Redactor
 
         private void body_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
+        }
+        /* Попытка добавить смайлы 
+        
+        public static readonly DependencyProperty TextProperty =
+     DependencyProperty.Register("Text", typeof(string), typeof(),
+       new UIPropertyMetadata(string.Empty, OnTextChanged));
+
+        static void OnTextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+             This = (MainWindow)d;
+            if (!This.m_IgnoreChanges)
+            {
+                This.m_IgnoreChanges = true;
+                This.txtText.Text = (string)e.NewValue;
+                EmoticonsHelper.ParseText(This.txtText);
+                This.m_IgnoreChanges = false;
+            }
         }
 
-   
+
+
+    }*/
 
     }
-
 }

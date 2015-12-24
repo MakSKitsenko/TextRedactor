@@ -74,7 +74,7 @@ namespace Redactor_Class
             }
             else return false;
         }
-        
+
 
         public bool SaveDocument()
         {
@@ -95,18 +95,18 @@ namespace Redactor_Class
         {
             SaveFileDialog dlg = new SaveFileDialog();
             dlg.Filter = "Rich Text Format (*.rtf)|*.rtf";
-            
+
             if (dlg.ShowDialog() == true)
             {
                 _currentFile = dlg.FileName;
                 return SaveDocument();
 
             }
-           
-            
+
+
             return false;
         }
-    
+
 
         public bool PrintDocument()
         {
@@ -121,20 +121,20 @@ namespace Redactor_Class
         }
         public bool CloseDocument(MainWindow window)
         {
-           
-                MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Вы?\nЕсли нет - закройте это окно", "Решите, что делать дальше");
-                if (messageBoxResult == MessageBoxResult.Yes)
-                {
-                    if (this.SaveDocument() == false)
-                    {
-                        window.Close();
 
-                    }
-                } 
-                window.Close();
-                return true;
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Вы?\nЕсли нет - закройте это окно", "Решите, что делать дальше");
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                if (this.SaveDocument() == false)
+                {
+                    window.Close();
+
+                }
             }
-        
+            window.Close();
+            return true;
+        }
+
         public void Undo_Click()
         {
             _textBox.Undo();
@@ -189,6 +189,33 @@ namespace Redactor_Class
             Smiles smiles = new Smiles();
             smiles.Show();
         }
-      
+        /*
+        public bool? HasEmoji
+        {
+            get
+            {
+                return hasEmoji;
+            }
+
+            set
+            {
+                hasEmoji = value;
+            }
+        }
+        
+        public static void  CheckMessageHasEmojiWithMySysmbol(t)
+        {
+            Regex regex = new Regex(":[)]|:[(]");
+          MatchCollection matchCollection = regex.Matches(_textBox);
+            message.HasEmoji = matchCollection.Count != 0 ? true : message.HasEmoji.Value;
+            return message;
+        }*/
+
+
+
     }
+   
+        
+       
+    
 }

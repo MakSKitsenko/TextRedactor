@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Redactor_Class;
 namespace Redactor
 {
     class EmoticonsHelper
@@ -46,8 +46,8 @@ namespace Redactor
             foreach (string k in m_Emoticons.Keys)
                 m_EmoticonsReverse[m_Emoticons[k]] = k;
         } } } // InitEmoticons
-        /*
-        public static string GetPlainText(_documentmanager doc)
+        /*Попытка добавить смайлы
+        public static string GetPlainText(Manager _documentmanager)
         {
             InitEmoticons();
             StringBuilder result = new StringBuilder();
@@ -171,7 +171,6 @@ namespace Redactor
                 }
             }
         } // ProcessInlines
-    }
-}
+    }*/
 
-    */
+   
